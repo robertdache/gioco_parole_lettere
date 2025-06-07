@@ -36,7 +36,3 @@ async function cambia_parole() {
             document.getElementById("Parola" + i).innerHTML = "errore";
     }
 }
-
-function tmp(){
-
-}
