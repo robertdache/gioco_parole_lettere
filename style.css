@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sinistra, .destra {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+
+.sinistra {
+    background: purple;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#Parola1, #Parola2, #Parola3, #Parola4, #Parola5 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.destra {
+    background: yellow;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#lettera {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.bottoni {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sinistra .bottoni button {
+    background: yellow;
+    color: purple;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.2s, color 0.2s;
+}
+
+.sinistra .bottoni button:hover {
+    background: #fff700;
+    color: #4b0082;
+}
+
+.destra .bottoni button {
+    background: purple;
+    color: yellow;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.2s, color 0.2s;
+}
+
+.destra .bottoni button:hover {
+    background: #4b0082;
+    color: #fff700;
+}

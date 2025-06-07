@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gioco nomi lettera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cambia_parole(), cambia_lettera()" > <!--onload="carica()"-->
+    <div class="container">
+        <div class="sinistra">
+            <div id="Parola1">Parola 1</div>
+            <div id="Parola2">Parola 2</div>
+            <div id="Parola3">Parola 3</div>
+            <div id="Parola4">Parola 4</div>
+            <div id="Parola5">Parola 5</div>
+            <div class="bottoni">
+                <button type="button" onclick="cambia_parole()"> cambia parole</button>
+            </div>
+            </div>
+        <div class="destra">
+            <span id="lettera">A</span>
+            <div class="bottoni">
+                <button type="button" onclick="cambia_lettera()"> cambia lettera</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
